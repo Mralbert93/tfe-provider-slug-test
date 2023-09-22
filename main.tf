@@ -2,6 +2,8 @@ provider "tfe" {
     token = var.token
 }
 
+variable "token" {}
+
 data "tfe_slug" "test_slug_policyset" {
 source_path = "policy-sets/qaent-dev-azure-sentinel-policy-set"
 }
