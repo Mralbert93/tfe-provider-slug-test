@@ -18,3 +18,6 @@ organization = "hashicorp-matthew"
 slug = data.tfe_slug.test_slug_policyset
 
 }
+
+resource "null_resource" "test" {
+}
