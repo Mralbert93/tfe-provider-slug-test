@@ -16,8 +16,4 @@ description = "A test policy set"
 organization = "hashicorp-matthew"
 
 slug = data.tfe_slug.test_slug_policyset
-
-lifecycle {
-   ignore_changes = [slug]
-}
 }
