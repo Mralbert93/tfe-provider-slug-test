@@ -17,7 +17,7 @@ organization = "hashicorp-matthew"
 
 slug = data.tfe_slug.test_slug_policyset
 
+lifecycle {
+   ignore_changes = [slug]
 }
-
-resource "null_resource" "test" {
 }
