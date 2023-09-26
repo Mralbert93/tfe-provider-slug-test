@@ -17,3 +17,7 @@ organization = "hashicorp-matthew"
 
 slug = data.tfe_slug.test_slug_policyset
 }
+
+resource "time_sleep" "wait" {
+  create_duration = "10m"
+}
