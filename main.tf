@@ -21,3 +21,8 @@ slug = data.tfe_slug.test_slug_policyset
 resource "time_sleep" "wait" {
   create_duration = "10m"
 }
+
+resource "null_resource" "test" {
+   count = 5000
+   depends_on = [data.tfe_slug.test_slug_policyset]
+}
